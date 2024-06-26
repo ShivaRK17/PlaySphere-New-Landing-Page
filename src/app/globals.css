@@ -16,18 +16,37 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
+  background-image: url('/bg.svg');
+  color: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: cyan;
+  border-radius: 10px;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  z-index: 19;
+}
+.tshadow{
+  text-shadow:  22px 14px 16px #000;
 }
